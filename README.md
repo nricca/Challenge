@@ -19,8 +19,12 @@ Créer une bibliotheque : Un site web qui permette de gérer des emprunts de livre
  * Qualité et lisibilité du code
  * Réflexion sur le fonctionnement
 
-Un fichier `info.md` detaillera la procedure d'installation du site généré et son fonctionnement. Penser à donner les identifiants d'accès pour le bibliothécaire et tout autres détails.
-
+### Informations supplémentaires
 Vous pouvez utilisez des Frameworks et Librairies pour developper le site web. Les deux sites doivent être accessible et disponible même sur mobile. L'ergonomie et le design du site seront pris en compte.
 
-Le projet est à envoyer par mail à l'adresse `devs@infomaniak.ch` ou en `pull request` sur ce projet.
+Un fichier `info.md` detaillera la procedure d'installation du site généré et son fonctionnement. Penser à donner les identifiants d'accès pour le bibliothécaire et tout autres détails.
+
+Le projet est à envoyer par mail à l'adresse email suivante : `devs@infomaniak.ch` ou en `pull request` sur ce projet.
+
+### Une question ?
+Pour cela, creez une `issue` sur le projet.
