@@ -1,0 +1,14 @@
+{
+    "name": "root/api",
+    "description": "PHP Backend",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ricca Nicola",
+            "email": "nicola.ricca@fundeego.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "~2.6"
+    }
+}

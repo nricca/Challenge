@@ -1,0 +1,22 @@
+<div class="modal-body">
+
+    <alert type="info" ng-if="book.owner != null">Ce livre est actuellement emprunté et ne peut être supprimé</alert>
+
+    <form name="bookForm">
+
+        <div class="form-group">
+            <label for="bookTitle">Titre</label>
+            <input type="text" class="form-control" id="bookTitle" ng-model="book.title" required>
+        </div>
+        <div class="form-group">
+            <label for="bookAuthor">Auteur</label>
+            <input type="text" class="form-control" id="bookAuthor" ng-model="book.author" required>
+        </div>
+
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" ng-click="cancel()">Annuler</button>
+    <button type="button" class="btn btn-danger" ng-click="delete()" ng-if="isEditMode" ng-disabled="book.owner != null">Supprimer</button>
+    <button type="button" class="btn btn-primary" ng-click="save()" ng-disabled="bookForm.$invalid">Sauver</button>
+</div>

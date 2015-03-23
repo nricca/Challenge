@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Redirect every request on index.php as slimframework will parse the requested url as a REST service.
+#
+RewriteBase /api
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !index
+RewriteRule (.*) index.php [QSA,L]

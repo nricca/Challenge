@@ -1,0 +1,24 @@
+{
+  "name": "infomaniak-challenge",
+  "version": "0.0.0",
+  "description": "RICCA Nicola - Infomaniak Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nricca/Challenge.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nricca/Challenge/issues"
+  },
+  "homepage": "https://github.com/nricca/Challenge",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-compass": "^2.0.3",
+    "gulp-livereload": "^3.8.0"
+  }
+}

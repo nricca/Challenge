@@ -1,0 +1,86 @@
+@import "compass/css3";
+
+body {
+  background-color: #F6F6F6;
+  color: #E3E3E3;
+}
+
+.navbar.navbar, .navbar-default.navbar {
+  color: #333;
+  background-color: white;
+  border-bottom: 1px solid #D1D1D1;
+  border-radius: 0px;
+  @include box-shadow(rgba(black, 0.1) 0px 0px 6px);
+
+  .navbar-brand {
+    color: #009587;
+  }
+}
+
+.form-control {
+
+  border-color: #E5E5E5;
+
+  @include input-placeholder {
+    color: #C5C5C5;
+  }
+}
+
+#login-form {
+  padding: 20px;
+  min-width: 400px;
+}
+
+#search-input {
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  .form-control {
+    padding-left: 37px;
+    border-color: #C5C5C5;
+  }
+
+  .form-control + .mdi-action-search {
+    color: #C5C5C5;
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    font-size: 16px;
+  }
+}
+
+.btn:hover:not(.btn-link):not(.btn-flat):not(.btn-fab) {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .12), 0 1px 6px 0 rgba(0, 0, 0, .12);
+}
+
+.input-group-addon i {
+  font-size: 16px;
+}
+
+.btn-link {
+  padding: 8px 0px;
+}
+
+.thumbnail.book {
+
+  padding: 0px;
+  background: none;
+  border: none;
+  min-height: 300px;
+
+  img {
+    height: 200px;
+    border-radius: 4px;
+    border: 1px solid #DDDDDD;
+  }
+
+  .caption {
+    padding: 0px;
+  }
+}
+
+.help-block {
+  padding-left: 40px;
+}

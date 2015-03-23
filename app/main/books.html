@@ -1,0 +1,41 @@
+<div class="container">
+
+    <div id="errors">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.message}}</alert>
+    </div>
+
+
+    <div id="search-input" class="row">
+
+        <div class="col-md-offset-4 col-md-4 col-md-offset-4">
+            <form class="text-center" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Rechercher votre livre" ng-model="search.text">
+                    <span class="mdi-action-search"></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-12" ng-if="isAdmin">
+            <button class="btn btn-primary btn-raised" ng-click="addBook()"><i class="mdi-content-add-circle"></i>&nbsp;&nbsp;Ajouter</button>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-2 col-sm-3 col-xs-6" ng-repeat="book in books | filter:filterFunction">
+            <div class="thumbnail book">
+                <img ng-src="http://lorempixel.com/200/200/people/{{book.bookId % 9}}" class="shadow-z-1">
+                <div class="caption">
+                    <h4>{{book.title}}<br><small>{{book.author}}</small></h4>
+                    <a href="#" ng-if="isUser && book.owner == null" ng-click="borrowBook(book)"><i class="mdi-editor-publish"></i>&nbsp;Emprunter</a>
+                    <a href="#" ng-if="isAdmin" ng-click="editBook(book)"><i class="mdi-editor-mode-edit"></i>&nbsp;Editer</a>
+                    <p ng-if="book.owner != null">Emprunté<small ng-if="isAdmin">&nbsp;par {{book.owner}}</small></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- /.container -->
